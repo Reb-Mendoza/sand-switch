@@ -6,7 +6,7 @@ public class SandwichAccuracy : MonoBehaviour
 {
     void OnCollisionEnter(Collision collisionInfo)
     {
-        if (collisionInfo.contactCount > 1 && collisionInfo.collider.gameObject.CompareTag("SandwichComponent")){
+        if (collisionInfo.contactCount > 2 && collisionInfo.collider.gameObject.CompareTag("SandwichComponent")){
             gameObject.AddComponent<FixedJoint>().connectedBody = collisionInfo.collider.gameObject.GetComponent<Rigidbody>();
         }
     }
