@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 484631182}
   - component: {fileID: 484631181}
   - component: {fileID: 484631184}
+  - component: {fileID: 484631185}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: SandwichComponent
@@ -152,7 +153,7 @@ Transform:
   m_GameObject: {fileID: 484631179}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.44, z: 10.22}
+  m_LocalPosition: {x: 0, y: 2.08, z: 4.49}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -237,7 +238,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484631179}
   serializedVersion: 4
-  m_Mass: 0.2
+  m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -256,6 +257,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &484631185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484631179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &624011308
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +482,7 @@ GameObject:
   - component: {fileID: 738787806}
   - component: {fileID: 738787805}
   - component: {fileID: 738787808}
+  - component: {fileID: 738787809}
   m_Layer: 0
   m_Name: TopBun
   m_TagString: SandwichComponent
@@ -485,7 +499,7 @@ Transform:
   m_GameObject: {fileID: 738787803}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.44000006, z: 12.04}
+  m_LocalPosition: {x: 0.04, y: 2.5, z: 4.52}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -570,7 +584,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738787803}
   serializedVersion: 4
-  m_Mass: 0.2
+  m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -589,6 +603,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &738787809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738787803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &885035879
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +628,7 @@ GameObject:
   - component: {fileID: 885035882}
   - component: {fileID: 885035881}
   - component: {fileID: 885035884}
+  - component: {fileID: 885035885}
   m_Layer: 0
   m_Name: Meat
   m_TagString: SandwichComponent
@@ -618,7 +645,7 @@ Transform:
   m_GameObject: {fileID: 885035879}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41, y: 0.47, z: 4.6}
+  m_LocalPosition: {x: -0, y: 1.11, z: 4.59}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -703,7 +730,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885035879}
   serializedVersion: 4
-  m_Mass: 0.2
+  m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -722,6 +749,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &885035885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885035879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,6 +903,7 @@ GameObject:
   - component: {fileID: 1232481254}
   - component: {fileID: 1232481253}
   - component: {fileID: 1232481256}
+  - component: {fileID: 1232481257}
   m_Layer: 0
   m_Name: BottomBun
   m_TagString: SandwichComponent
@@ -880,7 +920,7 @@ Transform:
   m_GameObject: {fileID: 1232481251}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.44, z: 3.09}
+  m_LocalPosition: {x: 0, y: 0.44, z: 4.56}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -965,7 +1005,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232481251}
   serializedVersion: 4
-  m_Mass: 0.2
+  m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -984,6 +1024,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1232481257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232481251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1689511117
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1049,7 @@ GameObject:
   - component: {fileID: 1689511120}
   - component: {fileID: 1689511119}
   - component: {fileID: 1689511122}
+  - component: {fileID: 1689511123}
   m_Layer: 0
   m_Name: Lettuce
   m_TagString: SandwichComponent
@@ -1013,7 +1066,7 @@ Transform:
   m_GameObject: {fileID: 1689511117}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.44, z: 8.44}
+  m_LocalPosition: {x: 0, y: 1.59, z: 4.61}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1098,7 +1151,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689511117}
   serializedVersion: 4
-  m_Mass: 0.2
+  m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1117,6 +1170,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1689511123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689511117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2132723179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,7 +1212,7 @@ Transform:
   m_GameObject: {fileID: 2132723179}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.52, y: 1.1700001, z: 4.51}
+  m_LocalPosition: {x: 0.03, y: 1.4, z: 4.51}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1244,7 +1309,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132723179}
   serializedVersion: 4
-  m_Mass: 0.2
+  m_Mass: 0.01
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
