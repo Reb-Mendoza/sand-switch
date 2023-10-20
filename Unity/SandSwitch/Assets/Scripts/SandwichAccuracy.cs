@@ -26,11 +26,12 @@ public class SandwichAccuracy : MonoBehaviour
                 score++;
                 UnityEngine.Debug.Log("Two Star");
             }
-            if ((lenOffset / lenTargetComponent) < 0.1f){
+            if ((lenOffset / lenTargetComponent) < 0.15f){
                 score++;
                 UnityEngine.Debug.Log("Three Star");
             }
             //IMPORTANT - Need to make the thickness of the component not matter in the calculation!!!
+            
         }
     }
 }
