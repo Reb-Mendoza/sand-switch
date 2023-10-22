@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 484631182}
   - component: {fileID: 484631181}
   - component: {fileID: 484631184}
-  - component: {fileID: 484631185}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: SandwichComponent
@@ -153,7 +152,7 @@ Transform:
   m_GameObject: {fileID: 484631179}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.041, y: 2.08, z: 4.549}
+  m_LocalPosition: {x: -1.128, y: 0.25, z: 4.549}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -257,22 +256,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &484631185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484631179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lenOffset: 0
-  lenTargetComponent: 0
-  score: 0
-  vector: {x: 0, y: 0, z: 1}
 --- !u!1 &624011308
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +469,6 @@ GameObject:
   - component: {fileID: 738787806}
   - component: {fileID: 738787805}
   - component: {fileID: 738787808}
-  - component: {fileID: 738787809}
   m_Layer: 0
   m_Name: TopBun
   m_TagString: SandwichComponent
@@ -503,7 +485,7 @@ Transform:
   m_GameObject: {fileID: 738787803}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 2.5, z: 4.52}
+  m_LocalPosition: {x: -1.1120001, y: 0.6700001, z: 4.52}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -607,22 +589,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &738787809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738787803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lenOffset: 0
-  lenTargetComponent: 0
-  score: 0
-  vector: {x: 0, y: 0, z: 1}
 --- !u!1 &885035879
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +619,7 @@ Transform:
   m_GameObject: {fileID: 885035879}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.11, z: 4.57}
+  m_LocalPosition: {x: -0, y: 0.898, z: 4.57}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -769,10 +735,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sqrLenCenters: 0
   lenOffset: 0
   lenTargetComponent: 0
   score: 0
-  vector: {x: 0, y: 0, z: 1}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1018486862}
   m_Layer: 0
-  m_Name: SandwichComponents
+  m_Name: SandwichManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1048,7 +1014,6 @@ GameObject:
   - component: {fileID: 1689511120}
   - component: {fileID: 1689511119}
   - component: {fileID: 1689511122}
-  - component: {fileID: 1689511123}
   m_Layer: 0
   m_Name: Lettuce
   m_TagString: SandwichComponent
@@ -1065,7 +1030,7 @@ Transform:
   m_GameObject: {fileID: 1689511117}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.08, y: 1.59, z: 4.6}
+  m_LocalPosition: {x: 1.172, y: 0.48300004, z: 4.6}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1169,22 +1134,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1689511123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689511117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lenOffset: 0
-  lenTargetComponent: 0
-  score: 0
-  vector: {x: 0, y: 0, z: 1}
 --- !u!1 &2132723179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,7 +1146,6 @@ GameObject:
   - component: {fileID: 2132723183}
   - component: {fileID: 2132723182}
   - component: {fileID: 2132723181}
-  - component: {fileID: 2132723184}
   - component: {fileID: 2132723185}
   m_Layer: 0
   m_Name: Cheese
@@ -1215,7 +1163,7 @@ Transform:
   m_GameObject: {fileID: 2132723179}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 1.4, z: 4.59}
+  m_LocalPosition: {x: 1.195, y: 0.293, z: 4.59}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1292,22 +1240,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132723179}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2132723184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132723179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9e192de312a427f87fc4c5d1efc376, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lenOffset: 0
-  lenTargetComponent: 0
-  score: 0
-  vector: {x: 0, y: 0, z: 1}
 --- !u!54 &2132723185
 Rigidbody:
   m_ObjectHideFlags: 0
