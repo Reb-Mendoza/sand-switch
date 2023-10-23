@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class SandwichAccuracy : MonoBehaviour
 {
-    public float sqrLenCenters;
-    public float lenOffset;
-    public float lenTargetComponent;
+    public Vector3 normal;
+    public Vector3 myCenter;
+    public Vector3 otherCenter;
+    public float offsetMagnitude;
+    public float offsetPercent;
     public int score = 0;
     void OnCollisionEnter(Collision collisionInfo)
     {
@@ -14,24 +16,22 @@ public class SandwichAccuracy : MonoBehaviour
         if (collisionInfo.contactCount > 2 && collisionInfo.collider.gameObject.CompareTag("SandwichComponent") && !(TryGetComponent<FixedJoint>(out FixedJoint joint))){
             //Have them stick together.
             gameObject.AddComponent<FixedJoint>().connectedBody = collisionInfo.collider.gameObject.GetComponent<Rigidbody>();
-            //Measure how accurately placed they are by measuring the distance between the component's centers.
-            //lenOffset uses the Pythagoren Theorm to find the relative horizontal offset of the ingredients given the distance between their centers as well as the thickness of each ingredient.
-            sqrLenCenters = (gameObject.transform.position - collisionInfo.collider.gameObject.transform.position).sqrMagnitude;
-            lenOffset = Mathf.Sqrt(sqrLenCenters - (((gameObject.transform.lossyScale.y / 2) + (collisionInfo.collider.gameObject.transform.lossyScale.y / 2)) * ((gameObject.transform.lossyScale.y / 2) + (collisionInfo.collider.gameObject.transform.lossyScale.y / 2))));
-            lenTargetComponent = collisionInfo.collider.gameObject.transform.lossyScale.x;
-            //lenOffset / lenTargetComponent has possible values of 0-2. Closer to 0 is better. 1 means the sandwich component is exactly halfway to the center.
-            //Judge the accuracy of the ingredient on a scale of 1-3.
-            UnityEngine.Debug.Log(Vector3.ProjectOnPlane(new Vector3(4f,3f,3f), new Vector3(0f,1f,0f)).magnitude);
-            UnityEngine.Debug.DrawRay(Vector3.zero,(Vector3.ProjectOnPlane(new Vector3(4f,3f,3f), new Vector3(0f,1f,0f))),Color.black,100,false);
-            if ((lenOffset / lenTargetComponent) < 1f){
+            //Measure how accurately placed they are by measuring the distance between the component's centers by projecting the vector from center to center of each touching component onto the plane perpendicular to the normal of the collision.
+            normal = collisionInfo.GetContact(0).normal;
+            myCenter = gameObject.transform.position;
+            otherCenter = collisionInfo.collider.gameObject.transform.position;
+            offsetMagnitude = (Vector3.ProjectOnPlane((myCenter - otherCenter), normal)).magnitude;
+            offsetPercent = (offsetMagnitude / collisionInfo.collider.gameObject.transform.lossyScale.x);
+            if (offsetPercent < 0.6f){
                 score++;
             }
-            if ((lenOffset / lenTargetComponent) < 0.5f){
+            if (offsetPercent < 0.4f){
                 score++;
             }
-            if ((lenOffset / lenTargetComponent) < 0.1f){
+            if (offsetPercent < 0.2f){
                 score++;
             }
+            gameObject.transform.parent.gameObject.GetComponent<SandwichScore>().SandwichFinalScore();
         }
     }
 }
