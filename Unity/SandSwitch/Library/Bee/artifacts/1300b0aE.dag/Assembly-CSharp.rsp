@@ -355,8 +355,11 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/MissileInstance.cs"
+"Assets/Scripts/ObstacleManager.cs"
+"Assets/Scripts/PlayerManager.cs"
 "Assets/Scripts/SandwichAccuracy.cs"
-"Assets/Scripts/SandwichScore.cs"
+"Assets/Scripts/SandwichManager.cs"
 -langversion:9.0
 
 /deterministic

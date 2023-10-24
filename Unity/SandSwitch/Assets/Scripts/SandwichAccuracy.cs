@@ -10,8 +10,7 @@ public class SandwichAccuracy : MonoBehaviour
     public float offsetMagnitude;
     public float offsetPercent;
     public int score = 0;
-    void OnCollisionEnter(Collision collisionInfo)
-    {
+    void OnCollisionEnter(Collision collisionInfo){
         //If there is a sufficient collision between two sandwich components,
         if (collisionInfo.contactCount > 2 && collisionInfo.collider.gameObject.CompareTag("SandwichComponent") && !(TryGetComponent<FixedJoint>(out FixedJoint joint))){
             //Have them stick together.
@@ -31,7 +30,7 @@ public class SandwichAccuracy : MonoBehaviour
             if (offsetPercent < 0.2f){
                 score++;
             }
-            gameObject.transform.parent.gameObject.GetComponent<SandwichScore>().SandwichFinalScore();
+            gameObject.transform.parent.gameObject.GetComponent<SandwichManager>().SandwichFinalScore();
         }
     }
 }
