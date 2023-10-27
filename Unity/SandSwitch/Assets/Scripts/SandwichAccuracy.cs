@@ -20,17 +20,18 @@ public class SandwichAccuracy : MonoBehaviour
             myCenter = gameObject.transform.position;
             otherCenter = collisionInfo.collider.gameObject.transform.position;
             offsetMagnitude = (Vector3.ProjectOnPlane((myCenter - otherCenter), normal)).magnitude;
-            offsetPercent = (offsetMagnitude / collisionInfo.collider.gameObject.transform.lossyScale.x);
-            if (offsetPercent < 0.6f){
+            //offsetPercent represents a percentage of how off the sandwich component is.
+            offsetPercent = (offsetMagnitude / collisionInfo.collider.gameObject.GetComponent<BoxCollider>().size.x);
+            if (offsetPercent < 60.0f){
                 score++;
             }
-            if (offsetPercent < 0.4f){
+            if (offsetPercent < 40.0f){
                 score++;
             }
-            if (offsetPercent < 0.2f){
+            if (offsetPercent < 20.0f){
                 score++;
             }
-            gameObject.transform.parent.gameObject.GetComponent<SandwichManager>().SandwichFinalScore();
+            GameObject.FindWithTag("SandwichManager").GetComponent<SandwichManager>().SandwichFinalScore();
         }
     }
 }

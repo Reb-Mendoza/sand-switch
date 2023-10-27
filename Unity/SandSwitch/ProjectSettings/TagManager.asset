@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - SandwichComponent
+  - SandwichManager
   layers:
   - Default
   - TransparentFX

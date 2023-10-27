@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ObstacleManager : MonoBehaviour
 {
-    public void spawnMissile(float damageValue){
-
+    public void spawnMissile(Vector3 start, Vector3 end, float damageValue){
+        
     }
 
     
