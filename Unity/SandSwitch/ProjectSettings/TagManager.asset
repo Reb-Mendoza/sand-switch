@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SandwichComponent
   - SandwichManager
+  - Missile
   layers:
   - Default
   - TransparentFX
